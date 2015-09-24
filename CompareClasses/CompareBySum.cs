@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Interface;
+using SortJaggArr;
 
 namespace CompareClasses
 {
-    public class CompareBySum : ICompare
+    public class CompareBySum : IComparer
     {
         public int Compare(int[] arr1, int[] arr2)
         {

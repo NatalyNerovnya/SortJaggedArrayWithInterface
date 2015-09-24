@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "ClassLibrary1\Interface.csproj", "{ADDE0BBD-9BAC-49BD-8FB5-FE2E3E05C9F6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareClasses", "CompareClasses\CompareClasses.csproj", "{11AB818C-2275-43E5-9EB5-706980987D91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortJaggArr", "SortJaggArr\SortJaggArr.csproj", "{370C028B-F3A8-464B-B024-0006B6FF09F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortMatrixTests", "SortMatrixTests\SortMatrixTests.csproj", "{5E680A68-C760-4686-AA4C-09D9D403CE34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADDE0BBD-9BAC-49BD-8FB5-FE2E3E05C9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADDE0BBD-9BAC-49BD-8FB5-FE2E3E05C9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADDE0BBD-9BAC-49BD-8FB5-FE2E3E05C9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADDE0BBD-9BAC-49BD-8FB5-FE2E3E05C9F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11AB818C-2275-43E5-9EB5-706980987D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11AB818C-2275-43E5-9EB5-706980987D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11AB818C-2275-43E5-9EB5-706980987D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{370C028B-F3A8-464B-B024-0006B6FF09F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{370C028B-F3A8-464B-B024-0006B6FF09F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{370C028B-F3A8-464B-B024-0006B6FF09F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E680A68-C760-4686-AA4C-09D9D403CE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E680A68-C760-4686-AA4C-09D9D403CE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E680A68-C760-4686-AA4C-09D9D403CE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E680A68-C760-4686-AA4C-09D9D403CE34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

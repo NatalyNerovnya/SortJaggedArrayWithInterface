@@ -40,18 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IComparer.cs" />
     <Compile Include="SortJaggedArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Interface.csproj">
-      <Project>{adde0bbd-9bac-49bd-8fb5-fe2e3e05c9f6}</Project>
-      <Name>Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CompareClasses\CompareClasses.csproj">
-      <Project>{11ab818c-2275-43e5-9eb5-706980987d91}</Project>
-      <Name>CompareClasses</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

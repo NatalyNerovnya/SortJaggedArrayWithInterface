@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Interface.csproj">
-      <Project>{adde0bbd-9bac-49bd-8fb5-fe2e3e05c9f6}</Project>
-      <Name>Interface</Name>
+    <ProjectReference Include="..\SortJaggArr\SortJaggArr.csproj">
+      <Project>{370c028b-f3a8-464b-b024-0006b6ff09f5}</Project>
+      <Name>SortJaggArr</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

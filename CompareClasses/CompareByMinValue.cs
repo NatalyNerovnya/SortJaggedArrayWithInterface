@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Interface;
+using SortJaggArr;
 
 namespace CompareClasses
 {
-    class CompareByMinValue : ICompare
+    class CompareByMinValue : IComparer
     {
         public int Compare(int[] arr1, int[] arr2)
         {

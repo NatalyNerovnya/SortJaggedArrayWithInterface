@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Interface;
-using CompareClasses;
 
 namespace SortJaggArr
 {
     public class SortJaggedArray
     {
-        public static void SortArray(ref int[][] arr, ICompare compare)
+        public static void SortArray(int[][] arr, IComparer compare)
         {
             if (compare == null || arr == null)
                 throw new ArgumentNullException();
@@ -26,6 +24,7 @@ namespace SortJaggArr
                 }
             }
         }
+
         private static void Swap(ref int[] a, ref int[] b)
         {
             int[] temp = a;
