@@ -13,7 +13,7 @@ namespace SortMatrixTests
         {
             int[] arr1 = { 1, 2, 3};
             int[] arr2 = { 3, 4, 5 };
-            CompareBySum compare = new CompareBySum();
+            CompareBySumDecrease compare = new CompareBySumDecrease();
 
             int result = compare.Compare(arr1, arr2);
             int expectedResult = -1;
@@ -25,7 +25,7 @@ namespace SortMatrixTests
         [ExpectedException(typeof(ArgumentNullException))]
         public void CompareBySum_NullAndNull_ArgumentNullException()
         {
-            CompareBySum compare = new CompareBySum();
+            CompareBySumDecrease compare = new CompareBySumDecrease();
             compare.Compare(null, null);
         }
 
@@ -33,7 +33,7 @@ namespace SortMatrixTests
         [ExpectedException(typeof(OverflowException))]
         public void CompareBySum_MaxIntegerAndArray_OverflowException()
         {
-            CompareBySum compare = new CompareBySum();
+            CompareBySumDecrease compare = new CompareBySumDecrease();
             int[] arr1 = { int.MaxValue };
             int[] arr2 = { 1, 2, 3 };
             compare.Compare(arr1, arr2);

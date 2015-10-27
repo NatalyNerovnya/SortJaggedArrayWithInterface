@@ -12,7 +12,7 @@ namespace SortMatrixTests
         [TestMethod]
         public void SortArray_PositiveArrayAndCompareBySum_SortedArrayAccordingToTheSum()
         {
-            CompareBySum compare = new CompareBySum();
+            CompareBySumDecrease compare = new CompareBySumDecrease();
             int row = 3;
             int[][] jagArr = new int[row][];
             jagArr[0] = new int[] { 6, 3, 2 };

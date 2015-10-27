@@ -7,7 +7,7 @@ using SortJaggArr;
 
 namespace CompareClasses
 {
-    class CompareByMinValue : IComparer
+    class CompareByMinValueDecrease : IComparer
     {
         public int Compare(int[] arr1, int[] arr2)
         {
