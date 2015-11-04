@@ -8,6 +8,8 @@ namespace SortJaggArr
 {
     public class SortJaggedArray
     {
+        public delegate int CompareDelegate(int[] arr1, int[] arr2);
+
         public static void SortArray(int[][] arr, IComparer compare)
         {
             if (compare == null || arr == null)
@@ -23,6 +25,11 @@ namespace SortJaggArr
                     }
                 }
             }
+        }
+
+        public static void SortArrayWithDelegat(int[][] arr, CompareDelegate compare)
+        {
+            SortArray(arr, new Adapter(compare));
         }
 
         private static void Swap(ref int[] a, ref int[] b)
