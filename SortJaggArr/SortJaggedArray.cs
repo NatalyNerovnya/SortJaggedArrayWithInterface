@@ -27,13 +27,17 @@ namespace SortJaggArr
             }
         }
 
-        public static void SortArrayWithDelegat(int[][] arr, CompareDelegate compare)
+        public static void SortArray(int[][] arr, CompareDelegate compare)
         {
+            if (compare == null)
+                throw new ArgumentNullException();
             SortArray(arr, new Adapter(compare));
         }
 
         private static void Swap(ref int[] a, ref int[] b)
         {
+            if(a == null || b == null)
+                throw new ArgumentNullException();
             int[] temp = a;
             a = b;
             b = temp;
