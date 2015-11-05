@@ -10,16 +10,16 @@ namespace SortJaggArr
     {
         public delegate int CompareDelegate(int[] arr1, int[] arr2);
 
-        public static void SortArray(int[][] arr, IComparer compare)
+        public static void SortArray(int[][] arr, IComparer comparer)
         {
-            if (compare == null || arr == null)
+            if (comparer == null || arr == null)
                 throw new ArgumentNullException();
 
             for (int i = 0; i < arr.Length; i++)
             {
                 for (int j = i + 1; j < arr.Length; j++)
                 {
-                    if (compare.Compare(arr[i], arr[j]) == -1)
+                    if (comparer.Compare(arr[i], arr[j]) == -1)
                     {
                         Swap(ref arr[i], ref arr[j]);
                     }
@@ -29,9 +29,26 @@ namespace SortJaggArr
 
         public static void SortArray(int[][] arr, CompareDelegate compare)
         {
-            if (compare == null)
+            if (compare == null || arr == null)
                 throw new ArgumentNullException();
             SortArray(arr, new Adapter(compare));
+        }
+
+        private class Adapter : IComparer
+        {
+
+            private CompareDelegate comparer;
+
+            public Adapter(CompareDelegate comparer)
+            {
+                this.comparer = comparer;
+            }
+
+            public int Compare(int[] arr1, int[] arr2)
+            {
+                return comparer(arr1, arr2);
+            }
+
         }
 
         private static void Swap(ref int[] a, ref int[] b)
